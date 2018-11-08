@@ -8,11 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
-    @IBOutlet weak var bgImage: UIImageView!
-    
-    @IBOutlet weak var swoosh: UIImageView!
     
     //Programatic Layout
     override func viewDidLoad() {
@@ -22,7 +19,10 @@ class ViewController: UIViewController {
 //        bgImage.frame = view.frame
         
     }
-
-
+//Back button from second screen to return to main screen.
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
 }
 
